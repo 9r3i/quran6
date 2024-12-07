@@ -1,0 +1,59 @@
+app.buildElement('div',null,{id:'bodybar'},[
+  app.buildElement('div',null,{id:'index'})
+]).appendTo(document.body);
+app.buildElement('div',null,{id:'statusbar'}).appendTo(document.body);
+app.buildElement('div',null,{id:'headbar'},[
+  app.buildElement('table',null,{
+    width:'100%',
+    cellpadding:'0px',
+    cellspacing:'0px',
+    border:'0px',
+  },[
+    app.buildElement('tbody',null,{},[
+      app.buildElement('tr',null,{id:'headbar-tr'},[
+        app.buildElement('td',null,{'class':'headbar-left'},[
+          app.buildElement('div',null,{
+            'class':'menu-button',
+            'onclick':'menuShow()'
+          },[
+            app.buildElement('div',null,{'class':'menu-strip'}),
+            app.buildElement('div',null,{'class':'menu-strip'}),
+            app.buildElement('div',null,{'class':'menu-strip'})
+          ]),
+        ]),
+        app.buildElement('td',null,{'class':'headbar-center'},[
+            app.buildElement('div',null,{'class':'quran-title'})
+        ]),
+        app.buildElement('td',null,{'class':'headbar-right'},[
+          app.buildElement('div',null,{
+            'class':'rmenu-button',
+            'onclick':'rightBarToggle()'
+          },[
+            app.buildElement('div',null,{'class':'rmenu-strip'}),
+            app.buildElement('div',null,{'class':'rmenu-strip-e'}),
+            app.buildElement('div',null,{'class':'rmenu-strip'}),
+            app.buildElement('div',null,{'class':'rmenu-strip-e'}),
+            app.buildElement('div',null,{'class':'rmenu-strip'}),
+            app.buildElement('div',null,{'class':'rmenu-strip-e'})
+          ]),
+        ])
+      ])
+    ])
+  ])
+]).appendTo(document.body);
+app.buildElement('div',null,{id:'bgbar'}).appendTo(document.body);
+app.buildElement('div',null,{id:'leftbar'},[
+  app.buildElement('div',null,{'class':'leftbar-header'},[
+    app.buildElement('div',null,{
+      'class':'leftbar-header-text',
+      'id':'user-email'
+    })
+  ]),
+  app.buildElement('div',null,{id:'leftbar-menu'})
+]).appendTo(document.body);
+app.buildElement('div',null,{id:'rbgbar'}).appendTo(document.body);
+app.buildElement('div',null,{id:'rightbar'},[
+  app.buildElement('div',null,{'class':'rightbar-upper-padding'}),
+  app.buildElement('div',null,{id:'rightbar-content'})
+]).appendTo(document.body);
+app.buildElement('div',null,{id:'footbar'}).appendTo(document.body);
