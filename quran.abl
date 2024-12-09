@@ -1,0 +1,26 @@
+; abl config default
+
+version=624
+namespace=quran6
+title="Quran"
+index="ready.html"
+
+[style]
+1="css/font-awesome.down.css"
+2="css/quran.down.css"
+3="css/tiny-slider.min.css"
+
+[script]
+1="js/header-1.5.1.min.js"
+2="js/fs.down.js"
+3="js/body.js"
+4="js/quran.min.js"
+5="js/quran.unreg.min.js"
+6="js/tiny-slider.min.js"
+
+[constant]
+ABL_START="js/start.js"
+
+; execute using: ai abl app quran
+
+
